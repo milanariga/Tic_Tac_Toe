@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+
+    <TableLayout
+        android:id="@+id/tbl_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="18dp"
+        android:stretchColumns="*"
+
+        >
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            >
+            <Button
+                android:id="@+id/btn00"
+                style="@style/ButtonStyle"
+                />
+            <Button
+                android:id="@+id/btn01"
+                style="@style/ButtonStyle"
+                />
+            <Button
+                android:id="@+id/btn02"
+                style="@style/ButtonStyle"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            >
+            <Button
+                android:id="@+id/btn10"
+                style="@style/ButtonStyle"
+                />
+            <Button
+                android:id="@+id/btn11"
+                style="@style/ButtonStyle"
+                />
+            <Button
+                android:id="@+id/btn12"
+                style="@style/ButtonStyle"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            >
+            <Button
+                android:id="@+id/btn20"
+                style="@style/ButtonStyle"
+                />
+            <Button
+                android:id="@+id/btn21"
+                style="@style/ButtonStyle"
+                />
+            <Button
+                android:id="@+id/btn22"
+                style="@style/ButtonStyle"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/msg_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tbl_layout"
+        android:text="@string/x_turn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_game"
+        android:id="@+id/new_game_btn"
+        android:layout_below="@+id/tbl_layout"
+        android:layout_alignRight="@+id/tbl_layout"
+        android:layout_alignEnd="@+id/tbl_layout"
+
+        />
+
+</RelativeLayout>
